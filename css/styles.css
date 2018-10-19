@@ -1,0 +1,67 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	background: #d3d3d3;
+}
+
+header {
+	display: flex;
+	background: #184351;
+	padding: 10px;
+}
+
+.header-image {
+	width: 30%;
+	padding: 10px;
+}
+
+.title-block {
+	width: 70%;
+	padding: 20px;
+	color: #EA872C;
+}
+
+.octocat {
+	border-radius: 50%;
+}
+
+/* .header-image:hover {
+  border-radius: 50%;
+  background: url('../img/karen_outside_blue_chair.jpg');
+} */
+
+/* navigation bar */
+
+#top-nav {
+  display: flex;
+  background: #642240;
+  padding: 15px;
+  margin: 0;
+}
+
+#top-nav ul {
+}
+
+#top-nav li {
+  flex-grow: 1;
+  text-align: center;
+  list-style-type: none;
+
+  padding: 5px 20px;
+}
+
+#top-nav a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+#top-nav a:hover {
+  color: #3FA1AE;
+}
